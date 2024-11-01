@@ -1,0 +1,240 @@
+body {
+  margin: 0;
+  padding-left: 210px;
+  padding-top: 90px;
+}
+p {
+  margin: 0;
+}
+.navbar {
+  height: 80px;
+  background-color: rgb(125, 244, 244);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.headings {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 12px;
+}
+
+.headings p {
+  font-size: 25px;
+  padding: 12px 24px;
+  font-weight: bold;
+  color: black;
+  transition: all 0.5s;
+}
+.headings p:hover {
+  background-color: black;
+  color: rgb(125, 244, 244);
+}
+.image {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  object-position: center;
+  transition: all 0.02s;
+}
+.image:hover {
+  width: 160px;
+  height: 160px;
+  cursor: pointer;
+}
+.imgContainer {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 30px;
+  column-gap: 30px;
+}
+.productContainer {
+  border: 2px solid gainsboro;
+  width: 250px;
+  background-color: rgba(0, 0, 0, 0.01);
+  text-align: center;
+}
+.productContainer:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+.onlyImage {
+  display: flex;
+  justify-content: center;
+}
+.single-pro-name {
+  color: rgb(129, 128, 128);
+  font-size: 22px;
+  height: 55px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.02s;
+}
+.single-pro-name:hover {
+  color: black;
+  cursor: pointer;
+}
+.sidebar {
+  background-color: hsl(0, 100%, 83%);
+  width: 200px;
+  position: fixed;
+  left: 0;
+  top: 80px;
+  bottom: 0;
+}
+.sidebar p {
+  display: flex;
+  justify-content: center;
+  font-size: 26px;
+  margin: 10px 10px 30px 10px;
+  border: 1px solid red;
+  padding: 6px 15px;
+  transition: all 0.02s;
+}
+.sidebar p:hover {
+  background-color: hsl(0, 100%, 63%);
+  color: white;
+  cursor: pointer;
+}
+.sidebar p:active {
+  background-color: hsl(0, 100%, 53%);
+}
+.noUnderline {
+  text-decoration: none;
+}
+.cartProduct-img {
+  width: 80px;
+}
+.cartProduct-img-container {
+  width: 130px;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+.cartPro-container {
+  border: 1px solid gainsboro;
+  border-radius: 15px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+  width: 650px;
+  margin: 15px;
+  display: flex;
+}
+.cartPro-name {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cartPro-info {
+  display: flex;
+  padding: 10px;
+  margin-top: 5px;
+  flex-direction: column;
+  align-items: center;
+}
+.cartPro-price,
+.single-pro-price {
+  font-size: 24px;
+  color: green;
+  margin-bottom: 6px;
+}
+.single-pro-price:hover {
+  color: hsl(120, 100%, 35%);
+  cursor: pointer;
+}
+.removeBtn {
+  padding: 10px 30px;
+  margin: 30px;
+  font-size: 20px;
+  background-color: hsl(0, 75%, 48%);
+  color: whitesmoke;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: all 0;
+}
+.removeBtn:hover {
+  cursor: pointer;
+  background-color: hsl(0, 75%, 58%);
+}
+.removeBtn:active {
+  background-color: hsl(0, 75%, 68%);
+}
+.btnContainer {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quantityControl button {
+  font-size: 20px;
+  font-weight: bold;
+  width: 25px;
+  margin: 8px;
+  border-radius: 5px;
+  background-color: hsl(198, 90%, 62%);
+}
+.quantityControl button:hover {
+  background-color: hsl(198, 90%, 72%);
+}
+.quantityControl button:active {
+  background-color: hsl(198, 90%, 82%);
+}
+
+.quantity {
+  font-weight: bold;
+  font-size: 18px;
+}
+.quantityDiv {
+  display: flex;
+  justify-content: space-between;
+  width: 270px;
+}
+.displayQuantity {
+  font-size: 20px;
+  padding-right: 15px;
+  font-weight: bold;
+}
+.displayQuantityDiv {
+  display: flex;
+  align-items: center;
+}
+.quantity-details {
+  padding-top: 20px;
+}
+.home-logo {
+  width: 600px;
+}
+
+.cartButton {
+  background-color: hsl(185, 78%, 35%);
+  color: white;
+  font-size: 22px;
+  border: none;
+  padding: 5px 15px;
+  margin: 8px;
+  border-radius: 18px;
+}
+.cartButton:hover {
+  background-color: hsl(185, 78%, 42%);
+  cursor: pointer;
+}
+.cartButton:active {
+  background-color: hsl(185, 78%, 50%);
+}
